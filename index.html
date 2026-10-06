@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda</title>
+    <!-- Preconexión a Google Fonts para mejorar rendimiento de carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carga de fuente Inter desde Google Fonts (weights 400, 500, 600) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header semántico: contiene logo y navegación principal -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo del sitio -->
+            <h1 class="logo">Tienda online</h1>
+            <!-- Navegación principal con lista desordenada -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main: contenido principal de la página -->
+    <main class="main">
+        <!-- Sección Hero/Bienvenida -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido a Mi Tienda</h2>
+                <p> bienvenido a mi tienda responsive</p>
+            </div>
+        </section>
+
+        <!-- Sección Productos: 9 cards responsivas con Flexbox -->
+        <section id="productos" class="productos">
+            <div class="container">
+                <h2>Productos</h2>
+                <!-- Contenedor flex para las tarjetas de producto -->
+                <div class="productos-grid">
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <img src="images/Reloj.avif" alt="Reloj inteligente">
+                        <h3>Smartwatch Pro</h3>
+                        <p>$99.00</p>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <img src="images/Camera.avif" alt="Cámara digital">
+                        <h3>Cámara</h3>
+                        <p>$149.00</p>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <img src="images/smartphone.jpg" alt="Smartphone">
+                        <h3>Smartphone X</h3>
+                        <p>$79.00</p>
+                    </article>
+                    <!-- Card 4 -->
+                    <article class="card">
+                        <img src="images/keyboard.webp" alt="Teclado mecánico">
+                        <h3>Teclado RGB</h3>
+                        <p>$129.00</p>
+                    </article>
+                    <!-- Card 5 -->
+                    <article class="card">
+                        <img src="images/headphone.jpg" alt="Auriculares">
+                        <h3>Auriculares ANC</h3>
+                        <p>$199.00</p>
+                    </article>
+                    <!-- Card 6 -->
+                    <article class="card">
+                        <img src="images/headphone 2.webp" alt="Auriculares inalámbricos">
+                        <h3>Earbuds Pro</h3>
+                        <p>$89.00</p>
+                    </article>
+                    <!-- Card 7 -->
+                    <article class="card">
+                        <img src="images/Smartwatch.jpg" alt="Smartwatch">
+                        <h3>Smart Watch</h3>
+                        <p>$40.00</p>
+                    </article>
+                    <!-- Card 8 -->
+                    <article class="card">
+                        <img src="images/Tablet.jpg" alt="Tablet">
+                        <h3>Tablet 10"</h3>
+                        <p>$149.00</p>
+                    </article>
+                    <!-- Card 9 -->
+                    <article class="card">
+                        <img src="images/Monitor_27jpg.jpg" alt="Monitor">
+                        <h3>Monitor 27"</h3>
+                        <p>$229.00</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas: Grid responsivo -->
+        <section id="reseñas" class="reseñas">
+            <div class="container">
+                <h2>Reseñas</h2>
+                <div class="reseñas-grid">
+                    <article class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Usuario 1" class="reseña-avatar">
+                            <div>
+                                <h4>María González</h4>
+                                <div class="estrellas">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Excelente calidad y envío rápido. El smartwatch superó mis expectativas."</p>
+                    </article>
+                    <article class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Usuario 2" class="reseña-avatar">
+                            <div>
+                                <h4>Carlos Ruiz</h4>
+                                <div class="estrellas">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>"Buenos productos, buena atención al cliente. Volveré a comprar."</p>
+                    </article>
+                    <article class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Usuario 3" class="reseña-avatar">
+                            <div>
+                                <h4>Laura Martín</h4>
+                                <div class="estrellas">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Los auriculares ANC son increíbles, cancelación de ruido perfecta."</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto: formulario con integración Formspree -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <!-- Formulario que envía datos a Formspree (endpoint configurado) -->
+                <form action="https://formspree.io/f/xayrnqzr" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer semántico: información de copyright -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mi Sitio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
