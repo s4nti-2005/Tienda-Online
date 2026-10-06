@@ -18,3 +18,6 @@ Sitio web básico con HTML y CSS que cumple los requisitos del proyecto.
 
 ## Uso
 Abrir `index.html` en el navegador.
+
+Link a la pagina
+https://effulgent-taiyaki-0b5579.netlify.app/
